@@ -7,12 +7,12 @@
 	
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
-		<property name="jdbcUrl" value="jdbc:log4jdbc:mysql://itwillbs.com:3306/c3d2212t3"></property>
+		<property name="jdbcUrl" value="jdbc:log4jdbc:mysql://192.168.55.81:3306/foodchoice"></property>
 <!-- 		<property name="jdbcUrl" value="jdbc:log4jdbc:mysql://(ip주소 혹은 localhost):3306/(데이터베이스 이름)"></property> -->
 <!--   -->
-		<property name="username" value="c3d2212t3"></property>
+		<property name="username" value="foodchoice"></property>
 <!-- 		<property name="username" value="사용자이름"></property> -->
-		<property name="password" value="1234"></property>
+		<property name="password" value="foodchoice231005"></property>
 <!-- 		<property name="password" value="비밀번호"></property> -->
 	</bean>	
 	
