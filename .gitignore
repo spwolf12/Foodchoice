@@ -121,3 +121,9 @@ hs_err_pid*
 
 # target directory
 target/*
+
+#classpath
+.classpath
+
+#.project
+.project
