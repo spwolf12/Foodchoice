@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.foodchoice.food.service.CommonService;
 
@@ -27,5 +28,24 @@ public class CommonController {
 		
 		return "main";
 	}
+	
+	@RequestMapping(value = "about")
+	public String about(Model model, HttpSession session) {
+		
+		return "about";
+	}
+	@RequestMapping(value = "menu")
+	public String menu(Model model, HttpSession session) {
+		
+		return "menu";
+	}
+	@RequestMapping(value = "book")
+	public String book(Model model, HttpSession session) {
+		
+		return "book";
+	}
+
+	
+	
 	
 }
