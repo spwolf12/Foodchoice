@@ -1346,7 +1346,6 @@
 	<jsp:include page="nav.jsp" />
 		<!--  content -->
 	<h3>메인 페이지</h3>
-	<jsp:include page="./top.jsp"/>
 	<jsp:include page="footer.jsp" />
 >>>>>>> bcee181 커밋
 </body>

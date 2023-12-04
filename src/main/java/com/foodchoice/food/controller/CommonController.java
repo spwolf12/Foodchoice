@@ -29,7 +29,7 @@ public class CommonController {
 		return "main";
 	}
 	
-<<<<<<< Upstream, based on origin/main
+
 	@RequestMapping(value = "about")
 	public String about(Model model, HttpSession session) {
 		
@@ -48,13 +48,6 @@ public class CommonController {
 
 	
 	
-=======
-	//회원로그인
-	@GetMapping(value = "memLogin")
-	public String memLogin() {
-		
-		return "login";
-	}
->>>>>>> bcee181 커밋
 	
+
 }
