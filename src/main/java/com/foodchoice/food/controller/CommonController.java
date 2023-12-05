@@ -19,13 +19,6 @@ public class CommonController {
 	@GetMapping(value = "main")
 	public String main(Model model, HttpSession session) {
 		
-		/* 예시용으로 남겨둔 코드
-		 * 적당히 진행되면 지우기
-		 * */
-//		List<HashMap<String, String>> screeningMovieList = service.selectScreeningMovieList();
-//		model.addAttribute("screeningMovieList", screeningMovieList);
-		
-		
 		return "main";
 	}
 	
@@ -44,7 +37,11 @@ public class CommonController {
 		
 		return "book";
 	}
-
+	@RequestMapping(value = "view")
+	public String view(Model model, HttpSession session) {
+		
+		return "view";
+	}
 	
 	
 	
