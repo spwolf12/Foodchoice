@@ -31,6 +31,7 @@
   <link href="resources/css/responsive.css" rel="stylesheet" />
 
 </head>
+<<<<<<< Upstream, based on origin/main
 
 <body>
 
@@ -1340,6 +1341,13 @@
   </script>
   <!-- End Google Map -->
 
+=======
+<body id="top">
+	<jsp:include page="nav.jsp" />
+		<!--  content -->
+	<h3>메인 페이지</h3>
+	<jsp:include page="footer.jsp" />
+>>>>>>> bcee181 커밋
 </body>
 
 </html>
