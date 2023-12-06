@@ -123,3 +123,354 @@ body * ::-webkit-scrollbar{width:16px;}body * ::-webkit-scrollbar-track{backgrou
     border-radius: 12px;
     cursor: pointer;
   }
+  
+ /* 상세정보 */ 
+@media (min-width: 912px) {
+  .css-bmfkpy {
+    border-radius: 16px;
+  }
+}
+@media (min-width: 912px) {
+  .css-bmfkpy {
+    padding: 24px;
+  }
+}
+@media (min-width: 912px) {
+  .css-bmfkpy {
+    max-width: 792px;
+  }
+}
+@media (min-width: 912px) {
+  .css-bmfkpy {
+    gap: 20px;
+  }
+}
+@media (min-width: 912px) {
+  .css-bmfkpy {
+    flex-direction: row;
+  }
+}
+.css-bmfkpy {
+  display: flex;
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 247 250 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 912px) {
+  .css-1ta92ef {
+    height: fit-content;
+    width: 31%;
+  }
+}
+.css-1ta92ef {
+  position: relative;
+}
+.css-1qsj5pv {
+  cursor: pointer;
+}
+.css-6hfoa5 {
+  position: absolute;
+  display: inline-flex;
+  flex-direction: row;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  gap: 4px;
+  height: 24px;
+  width: auto;
+  padding: 5px 8px;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.48);
+}    
+.css-6hfoa5 svg {
+  fill: rgb(255, 255, 255);
+}
+.css-1nntp4m {
+  font-size: 0.75rem;
+  line-height: normal;
+  letter-spacing: 0px;
+  color: rgb(255, 255, 255);
+}
+@media (min-width: 912px) {
+  .css-gp2jfw {
+    width: 69%;
+  }
+}
+.css-gp2jfw {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.css-zjkjbb {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.css-1ywt6mt {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}             
+.css-14lguvl {
+  font-size: 1.25rem;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+  overflow: hidden;
+  display: -webkit-box;
+  -moz-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}             
+.css-1lrzwll {
+  display: flex;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.css-d50nmk {
+  overflow: hidden;
+  display: -webkit-box;
+  -moz-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.css-jyer5m {
+  align-self: center;
+}
+.css-mal6vx {
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: normal;
+  letter-spacing: 0px;
+  border-style: none;
+  --tw-text-opacity: 1;
+  color: rgb(18 115 228 / var(--tw-text-opacity));
+  padding: 0px;
+}
+.css-mal6vx svg {
+  height: 16px;
+  width: 16px;
+  fill: rgb(18, 115, 228);
+}
+.css-hn31yc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} 
+.css-1bpi9ty {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}         
+.css-1rahewi:first-of-type {
+  padding-top: 0px;
+}
+.css-1rahewi:first-of-type {
+  border-width: 0px;
+}
+.css-1rahewi {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(235 235 235 / var(--tw-border-opacity));
+  padding-top: 12px;
+}
+.css-14s0lfu {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+.css-1rw2dq2 {
+  display: flex;
+  flex-direction: row;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  gap: 6px;
+}
+.css-1mmyylq {
+  display: flex;
+  gap: 4px;
+  min-width: 84px;
+}
+.css-d0ksyw {
+  padding-top: 1px;
+}
+.css-d0ksyw svg {
+  fill: rgb(153, 153, 153);
+}
+.css-1tn66r8 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.css-y74hyn {
+  font-size: 0.75rem;
+  line-height: normal;
+  letter-spacing: 0px;
+  --tw-text-opacity: 1;
+  color: rgb(112 112 112 / var(--tw-text-opacity));
+  font-weight: 600;
+}
+.css-ua6i0v {
+  font-size: 0.75rem;
+  line-height: normal;
+  letter-spacing: 0px;
+  --tw-text-opacity: 1;
+  color: rgb(112 112 112 / var(--tw-text-opacity));
+}
+.css-zpds22 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  -moz-box-pack: end;
+  justify-content: flex-end;
+  flex: 0 0 auto;
+  gap: 8px;
+}
+.css-1cwi2mv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+.css-1t6mi9c {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  -moz-box-pack: center;
+  justify-content: center;
+  gap: 2px;
+}
+.css-9d2c81 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+.css-9d2c81 .gc-tag {
+  max-width: 150px;
+}
+.css-bm68df {
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-weight: 700;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 235 235 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(244 88 88 / var(--tw-text-opacity));
+  border-radius: 2px;
+  padding: 1.5px 4px;
+  font-size: 0.5625rem;
+  line-height: normal;
+  letter-spacing: 0px;
+  height: 14px;
+}
+.css-iul3il {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.css-1l31u4y {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.css-sgu9be {
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: end;
+  justify-content: flex-end;
+  gap: 2px;
+}
+.css-149gbl6 {
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: end;
+  justify-content: flex-end;
+}
+.css-a34t1s {
+  font-size: 1.125rem;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+.css-ispc2z {
+  padding-bottom: 1px;
+  font-size: 0.9375rem;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+/* 객실정보*/
+.css-12ibmpc {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+}
+.css-1insk2s {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 4px;
+}
+.css-1erzymf {
+  font-size: 0.625rem;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(112 112 112 / var(--tw-text-opacity));
+  flex: 0 0 auto;
+  width: 62px;
+}
+.css-1wr23hb {
+  font-size: 0.625rem;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(112 112 112 / var(--tw-text-opacity));
+  width: auto;
+  overflow: hidden;
+  display: -webkit-box;
+  -moz-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}  
+  
+  

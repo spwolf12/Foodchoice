@@ -8,9 +8,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <link href="${path }/resources/css/view.css" rel="stylesheet">
+  <link href="${path }/resources/css/d5ffef77c62fd5ac.css" rel="stylesheet">
+  <link href="${path }/resources/css/4fb4edd0f89a4227.css" rel="stylesheet">
 </head>
 <%
 String place = "place";
+String plan = "12.05 화 - 12.06 수 (1박)";
 
 %> 
 <body class="w-full" style="overflow: auto;">
@@ -36,7 +39,7 @@ String place = "place";
                 <span class="css-a4odvj"><%=place%></span>
               </div>
               <div role="presentation" class="css-611krx">
-                <div class="css-1fgrnfw">12.05 화 - 12.06 수 (1박)</div>
+                <div class="css-1fgrnfw"><%=plan %></div>
               </div>
               <div role="presentation" class="css-1ssryq3">인원 2</div>
             </div>
@@ -91,36 +94,8 @@ String place = "place";
         </div>
       </header>
       
-      <nav class="css-6wj5nx">
-        <div class="css-1fi66c6">
-          <div class="gc-line-large-tab css-zxx61x">
-            <ul role="tablist" aria-label="" class="gc-line-large-tab-ul css-cfjpcv">
-              <li tabindex="0" role="tab" aria-selected="false" aria-controls="overview" class="css-1xm5k3z">
-                <span class="css-1ul4dyk">개요</span>
-              </li>
-              <li tabindex="0" role="tab" aria-selected="false" aria-controls="facility" class="css-1xm5k3z">
-                <span class="css-1ul4dyk">서비스 및 부대시설</span>
-              </li>
-              <li tabindex="0" role="tab" aria-selected="false" aria-controls="room" class="css-1xm5k3z">
-                <span class="css-1ul4dyk">객실</span>
-              </li>
-              <li tabindex="0" role="tab" aria-selected="true" aria-controls="location" class="css-1xm5k3z">
-                <span class="css-k3ujds">위치</span>
-              </li>
-              <li tabindex="0" role="tab" aria-selected="false" aria-controls="review" class="css-1xm5k3z">
-                <span class="css-1ul4dyk">리뷰</span>
-              </li>
-              <div class="css-fypmlo" style="width: 60px; left: 342px;">
-              </div>
-            </ul>
-          </div>
-          <div class="css-1sfqucg">
-            <button class="gc-box-button css-1vakm5g" type="button">
-              <span>객실선택</span>
-            </button>
-          </div>
-        </div>
-      </nav>
+      <jsp:include page="/WEB-INF/inc/top_nav.jsp"></jsp:include>
+      
       <main class="css-wlvevb">
         <div class="css-h1azuc">
           <section aria-label="갤러리" id="overview" data-scrollspy-target="true" class="css-qv0nxj">
@@ -344,8 +319,6 @@ String place = "place";
                     </div>
                   </div>
                   
-                  
-                  
                   <div role="button" tabindex="-1" class="css-1masttw">
                     <button class="gc-icon-round-button css-11zi1w5" type="button">
                       <span>
@@ -372,7 +345,63 @@ String place = "place";
                   </div>
                 </div>
               </div>
+              
               <div class="css-1he6eth">
+                <style>
+                @media (min-width: 912px) {
+								  .css-1he6eth {
+								    border-radius: 12px;
+								    border-width: 1px;
+								    --tw-border-opacity: 1;
+								    border-color: rgb(235 235 235 / var(--tw-border-opacity));
+								  }
+								}
+								@media (min-width: 912px) {
+								  .css-1he6eth {
+								    padding-left: 23px;
+								    padding-right: 23px;
+								  }
+								}
+								@media (min-width: 912px) {
+								  .css-1he6eth {
+								    max-width: 340px;
+								  }
+								}
+								.css-1he6eth {
+								  padding-top: 8px;
+								}
+                
+                .css-1uhwmgm {
+							  display: flex;
+							  flex-direction: column;
+							  gap: 24px;
+							  padding-top: 16px;
+							  padding-bottom: 24px;
+							}
+                .css-9d6mp3 {
+							  position: relative;
+							  height: 100%;
+							}
+							@media (min-width: 912px) {
+							  a, input, button, div, li, textarea, form, label, select {
+							    outline: 2px solid transparent;
+							    outline-offset: 2px;
+							  }
+							}
+                .css-9d6mp3.gc-indicator-carousel .swiper {
+							  width: 100%;
+							  height: 100%;
+							  position: static;
+							}
+							@media (min-width: 1281px) {
+							  .css-1stjli5 .swiper {
+							    height: 112px !important;
+							  }
+							}
+							.css-9d6mp3.gc-indicator-carousel .swiper-wrapper {
+							  display: inline-flex;
+							}
+              </style>
                 <div class="css-1uhwmgm">
                   <div class="css-1stjli5">
                     <div class="gc-indicator-carousel css-9d6mp3">
@@ -393,7 +422,9 @@ String place = "place";
                       </div>
                     </div>
                   </div>
+                  
                 </div>
+                
                 <div aria-label="결제 혜택" class="css-1xivh">
                   <div class="gc-section-header css-1d6biqj">
                     <div class="css-186mtw9">
@@ -431,8 +462,56 @@ String place = "place";
                     </ul>
                   </div>
                 </div>
+                
               </div>
             </div>
+            <style>
+            /*facility */
+@media (min-width: 912px) {
+  .css-1g5zwbk {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 912px) {
+  .css-1g5zwbk {
+    float: left;
+  }
+}
+@media (min-width: 912px) {
+  .css-1g5zwbk {
+    width: 66%;
+  }
+}
+@media (min-width: 912px) {
+  .css-1ydn4yb {
+    height: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(235 235 235 / var(--tw-bg-opacity));
+  }
+}
+.css-1ydn4yb {
+  margin-bottom: 8px;
+  width: 100%;
+} 
+.css-11imkzv {
+  padding: 16px 0px;
+}
+.css-186mtw9 {
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+}
+.css-45wb13 {
+  font-size: 1.125rem;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+            </style>
             <div aria-label="서비스 및 부대시설" id="facility" data-scrollspy-target="true" class="css-1g5zwbk">
               <div class="css-1ydn4yb">
               </div>
@@ -467,6 +546,11 @@ String place = "place";
               <div class="gc-section-header css-11imkzv">
                 <h2 class="title css-45wb13">객실 선택</h2>
               </div>
+              
+              <style>
+              
+              </style>
+              
               <div class="css-7v8o9n">
                 <div class="gc-domestic-item-card css-bmfkpy">
                   <div class="css-1ta92ef">
