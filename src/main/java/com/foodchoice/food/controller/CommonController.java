@@ -21,7 +21,6 @@ public class CommonController {
 		
 		return "main";
 	}
-	
 
 	@RequestMapping(value = "about")
 	public String about(Model model, HttpSession session) {
@@ -43,8 +42,4 @@ public class CommonController {
 		
 		return "view";
 	}
-	
-	
-	
-
 }
