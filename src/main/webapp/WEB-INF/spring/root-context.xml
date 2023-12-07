@@ -7,9 +7,13 @@
 	
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
-		<property name="jdbcUrl" value="jdbc:log4jdbc:oracle:thin:@localhost:1521:orcl"></property>
+		<property name="jdbcUrl" value="jdbc:log4jdbc:mysql://localhost:3306/foodchoice"></property>
+<!-- 		<property name="jdbcUrl" value="jdbc:log4jdbc:mysql://(ip주소 혹은 localhost):3306/(데이터베이스 이름)"></property> -->
+<!--   -->
 		<property name="username" value="foodchoice"></property>
+<!-- 		<property name="username" value="사용자이름"></property> -->
 		<property name="password" value="foodchoice231005"></property>
+<!-- 		<property name="password" value="비밀번호"></property> -->
 	</bean>	
 	
 	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
@@ -24,3 +28,12 @@
 	<!-- MyBatis 연동에 사용될 객체들의 패키지 위치 지정(기본 루트 패키지 지정) -->
 	<mybatis-spring:scan base-package="com.foodchoice.food" />
 </beans>
+
+
+
+
+
+
+
+
+
