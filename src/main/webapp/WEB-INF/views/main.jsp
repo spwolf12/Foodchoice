@@ -11,6 +11,12 @@
     <jsp:include page="inc/header_meta.jsp"></jsp:include>
 </head>
 <body>
+     <%
+       //TODO 테스트용, DB되면 로직 바꾸기
+       String itemName = "Clock";
+       String date = "18 Oct 2020";
+       String viewCnt = "9,906";
+     %>    
     <!-- Page Loader -->
     <div id="loader-wrapper">
         <div id="loader"></div>
@@ -19,7 +25,7 @@
         <div class="loader-section section-right"></div>
 
     </div>
-    <jsp:include page="navbar.jsp"></jsp:include>
+    <jsp:include page="/WEB-INF/views/inc/navbar.jsp"></jsp:include>
 
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="${pageContext.request.contextPath}/resources/images/hero.jpg">
         <form class="d-flex tm-search-form">
@@ -31,50 +37,38 @@
     </div>
 
     <div class="container-fluid tm-container-content tm-mt-60">
+    
+        <%for(int j=0; j<4; j++){%>
         <div class="row mb-4">
-            <h2 class="col-6 tm-text-primary">
-                Latest Photos
-            </h2>
+            <h2 class="col-6 tm-text-primary">Latest Photos</h2>
             <div class="col-6 d-flex justify-content-end align-items-center">
-                <form action="" class="tm-text-primary">
-                    Page <input type="text" value="1" size="1" class="tm-input-paging tm-text-primary"> of 200
-                </form>
+                <a href="detail" class="tm-text-primary">더보기</a>
             </div>
         </div>
         
-        <div class="row tm-mb-90 tm-gallery">
-            <%int rotateNum = 16; %>
+        <div class="row tm-mb-60 tm-gallery">
+            <%int rotateNum = 4; %>
             <%for(int i=0; i<rotateNum; i++){ %>
         	  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
                 <figure class="effect-ming tm-video-item">
-                    <img src="${pageContext.request.contextPath}/resources/images/img-<%=i+1%>.jpg" alt="Image" class="img-fluid">
+                    <img src="${pageContext.request.contextPath}/resources/images/img-<%=(i+1)+(j*4)%>.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Clocks</h2>
+                        <h2><%=itemName %></h2>
                         <a href="detail">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">18 Oct 2020</span>
-                    <span>9,906 views</span>
+                  <span class="tm-text-gray-light"><%=date %></span>
+                  <span><%=viewCnt %> views</span>
                 </div>
             </div>
             <%} %>
         </div> <!-- row -->
-        
-        <div class="row tm-mb-90">
-            <div class="col-12 d-flex justify-content-between align-items-center tm-paging-col">
-                <a href="javascript:void(0);" class="btn btn-primary tm-btn-prev mb-2 disabled">Previous</a>
-                <div class="tm-paging d-flex">
-                    <a href="javascript:void(0);" class="active tm-paging-link">1</a>
-                    <a href="javascript:void(0);" class="tm-paging-link">2</a>
-                    <a href="javascript:void(0);" class="tm-paging-link">3</a>
-                    <a href="javascript:void(0);" class="tm-paging-link">4</a>
-                </div>
-                <a href="javascript:void(0);" class="btn btn-primary tm-btn-next">Next Page</a>
-            </div>            
-        </div>
+        <%} %>
+        <jsp:include page="/WEB-INF/views/inc/pageIndex.jsp"></jsp:include>
+
     </div> <!-- container-fluid, tm-container-content -->
-    <jsp:include page="footer.jsp"></jsp:include>
+    <jsp:include page="/WEB-INF/views/inc/footer.jsp"></jsp:include>
     
     <script src="${pageContext.request.contextPath}/resources/js/plugins.js"></script>
 </body>
