@@ -272,6 +272,7 @@ p, .tm-text-gray { color: #999; }
     overflow: hidden;
     text-align: center;
     cursor: pointer;
+    border-radius: 16px;
 }
 
 .tm-video-item img {
