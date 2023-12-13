@@ -32,14 +32,14 @@ public class CommonController {
 		
 		return "menu";
 	}
-	@RequestMapping(value = "book")
-	public String book(Model model, HttpSession session) {
+	@GetMapping(value = "detail")
+	public String detail(Model model, HttpSession session) {
 		
-		return "book";
+		return "detail";
 	}
-	@RequestMapping(value = "view")
-	public String view(Model model, HttpSession session) {
+	@GetMapping(value = "contact")
+	public String contact(Model model, HttpSession session) {
 		
-		return "view";
+		return "contact";
 	}
 }
