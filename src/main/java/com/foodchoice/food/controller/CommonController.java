@@ -42,4 +42,14 @@ public class CommonController {
 		
 		return "contact";
 	}
+	@GetMapping(value = "foodListForm")
+	public String foodListForm(Model model, HttpSession session) {
+		
+		return "food_list_form";
+	}
+	@GetMapping(value = "iframePage")
+	public String iframePage(Model model, HttpSession session) {
+		
+		return "iframePage";
+	}
 }

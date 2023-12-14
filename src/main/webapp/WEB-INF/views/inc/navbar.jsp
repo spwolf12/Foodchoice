@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%//TODO active 이벤트 수정 %>
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand" href="main">
@@ -18,7 +17,10 @@
                 <a class="nav-link nav-link-2" href="about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-link-3 active" aria-current="page" href="contact">Contact</a>
+                <a class="nav-link nav-link-3" href="foodListForm">List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-4 active" aria-current="page" href="contact">Contact</a>
             </li>
         </ul>
         </div>

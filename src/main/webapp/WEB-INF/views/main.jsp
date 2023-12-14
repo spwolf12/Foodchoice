@@ -12,20 +12,17 @@
 </head>
 <body>
      <%
+     
        //TODO 테스트용, DB되면 로직 바꾸기
        String itemName = "Clock";
        String date = "18 Oct 2020";
        String viewCnt = "9,906";
      %>    
     <!-- Page Loader -->
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-
-    </div>
+    <jsp:include page="/WEB-INF/views/inc/page_loder.jsp"></jsp:include>
+    <!-- navbar -->
     <jsp:include page="/WEB-INF/views/inc/navbar.jsp"></jsp:include>
+
 
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="${pageContext.request.contextPath}/resources/images/hero.jpg">
         <form class="d-flex tm-search-form">
@@ -40,7 +37,7 @@
     
         <%for(int j=0; j<4; j++){%>
         <div class="row mb-4">
-            <h2 class="col-6 tm-text-primary">Latest Photos</h2>
+            <h2 class="col-6 tm-text-primary">테마<%=j+1 %></h2>
             <div class="col-6 d-flex justify-content-end align-items-center">
                 <a href="detail" class="tm-text-primary">더보기</a>
             </div>
@@ -66,10 +63,7 @@
         </div> <!-- row -->
         <%} %>
         <jsp:include page="/WEB-INF/views/inc/pageIndex.jsp"></jsp:include>
-
     </div> <!-- container-fluid, tm-container-content -->
     <jsp:include page="/WEB-INF/views/inc/footer.jsp"></jsp:include>
-    
-    <script src="${pageContext.request.contextPath}/resources/js/plugins.js"></script>
 </body>
 </html>
