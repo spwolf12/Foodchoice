@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
@@ -16,15 +15,12 @@
 <%
  String title = "Photo title goes here";
  String imgSrc = pageContext.getServletContext().getContextPath()+ "/resources/images/img-1-big.jpg";
+ 
 %>
+
   <!-- Page Loader -->
-  <div id="loader-wrapper">
-    <div id="loader"></div>
-
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-
-  </div>
+  <jsp:include page="/WEB-INF/views/inc/page_loder.jsp"></jsp:include>
+  <!-- navbar -->
   <jsp:include page="/WEB-INF/views/inc/navbar.jsp"></jsp:include>
 
   <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="${pageContext.request.contextPath}/resources/images/hero.jpg">
