@@ -12,14 +12,9 @@
 </head>
 <body>
     <!-- Page Loader -->
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-
-    </div>
-    <jsp:include page="navbar.jsp"></jsp:include>
+    <jsp:include page="/WEB-INF/views/inc/page_loder.jsp"></jsp:include>
+    <!-- navbar -->
+    <jsp:include page="/WEB-INF/views/inc/navbar.jsp"></jsp:include>
 
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="${pageContext.request.contextPath}/resources/images/hero.jpg"></div>
 
@@ -94,7 +89,6 @@
                 </div>               
             </div>
         </div>
-        
         <div class="row tm-mb-74 tm-people-row">
             <%int rotateNum = 4; %>
             <%for(int i=0; i<rotateNum; i++){ %>
@@ -114,7 +108,7 @@
             <%} %>
         </div>
     </div> <!-- container-fluid, tm-container-content -->
-    <jsp:include page="footer.jsp"></jsp:include>
+    <jsp:include page="/WEB-INF/views/inc/footer.jsp"></jsp:include>
     
     <script src="${pageContext.request.contextPath}/resources/js/plugins.js"></script>
 </body>

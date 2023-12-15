@@ -8,17 +8,14 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/templatemo-style.css">
     <script src="${pageContext.request.contextPath}/resources/js/jquery-3.4.1.min.js"></script>
     <script src="${pageContext.request.contextPath}/resources/js/common.js"></script>
+    <jsp:include page="inc/header_meta.jsp"></jsp:include>
 </head>
 <body>
+    <%int nav = 2; %>
     <!-- Page Loader -->
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-
-    </div>
-    <jsp:include page="navbar.jsp"></jsp:include>
+    <jsp:include page="/WEB-INF/views/inc/page_loder.jsp"></jsp:include>
+    <!-- navbar -->
+    <jsp:include page="/WEB-INF/views/inc/navbar.jsp"></jsp:include>
 
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="${pageContext.request.contextPath}/resources/images/hero.jpg"></div>
 
@@ -106,7 +103,7 @@
         </div>
     </div>
 
-    <jsp:include page="footer.jsp"></jsp:include>
+    <jsp:include page="/WEB-INF/views/inc/footer.jsp"></jsp:include>
     
     <script src="${pageContext.request.contextPath}/resources/js/plugins.js"></script>
 </body>
