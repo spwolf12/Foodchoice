@@ -42,14 +42,13 @@ public class CommonController {
 		
 		return "contact";
 	}
-<<<<<<< main
+
 	@GetMapping(value = "map")
 	public String map(Model model, HttpSession session) {
 		
 		return "map";
 	}
-=======
->>>>>>> 2a05bdf 페이지 쪼개기 리스트&지도 페이지
+
 	@GetMapping(value = "foodListForm")
 	public String foodListForm(Model model, HttpSession session) {
 		
