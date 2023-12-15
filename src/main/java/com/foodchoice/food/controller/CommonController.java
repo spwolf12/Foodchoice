@@ -42,11 +42,13 @@ public class CommonController {
 		
 		return "contact";
 	}
+
 	@GetMapping(value = "map")
 	public String map(Model model, HttpSession session) {
 		
 		return "map";
 	}
+
 	@GetMapping(value = "foodListForm")
 	public String foodListForm(Model model, HttpSession session) {
 		
