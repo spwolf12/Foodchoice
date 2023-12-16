@@ -19,7 +19,7 @@ public class CommonController {
 	@GetMapping(value = "main")
 	public String main(Model model, HttpSession session) {
 		
-		return "main";
+		return "Weather";
 	}
 
 	@RequestMapping(value = "about")
