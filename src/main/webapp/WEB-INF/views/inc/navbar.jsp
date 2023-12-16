@@ -20,7 +20,10 @@
                 <a class="nav-link nav-link-3" href="foodListForm">List</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-link-4 active" aria-current="page" href="contact">Contact</a>
+                <a class="nav-link nav-link-4" href="Weather">Weather</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-5 active" aria-current="page" href="contact">Contact</a>
             </li>
         </ul>
         </div>

@@ -19,7 +19,7 @@ public class CommonController {
 	@GetMapping(value = "main")
 	public String main(Model model, HttpSession session) {
 		
-		return "Weather";
+		return "main";
 	}
 
 	@RequestMapping(value = "about")
@@ -58,5 +58,11 @@ public class CommonController {
 	public String iframePage(Model model, HttpSession session) {
 		
 		return "iframePage";
+	}
+	
+	@GetMapping(value = "Weather")
+	public String weather(Model model, HttpSession session) {
+		
+		return "Weather";
 	}
 }
