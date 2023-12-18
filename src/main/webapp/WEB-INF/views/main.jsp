@@ -1,4 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+  //TODO 테스트용, DB되면 로직 바꾸기
+  String itemName = "Clock";
+  String date = "18 Oct 2020";
+  String viewCnt = "9,906";
+  String[] themeList = {"비 오는 날씨 이런 음식은 어때요?", "주로 먹는 메뉴들","가장 가까운 메뉴"};
+%>   
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -8,253 +15,38 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/templatemo-style.css">
     <script src="${pageContext.request.contextPath}/resources/js/jquery-3.4.1.min.js"></script>
     <script src="${pageContext.request.contextPath}/resources/js/common.js"></script>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main.css">
     <jsp:include page="inc/header_meta.jsp"></jsp:include>
 </head>
 <body>
-     <%
-     
-       //TODO 테스트용, DB되면 로직 바꾸기
-       String itemName = "Clock";
-       String date = "18 Oct 2020";
-       String viewCnt = "9,906";
-       String[] themeList = {"비 오는 날씨 이런 음식은 어때요?", "주로 먹는 메뉴들","가장 가까운 메뉴"};
-     %>    
+ 
     <!-- Page Loader -->
     <jsp:include page="/WEB-INF/views/inc/page_loder.jsp"></jsp:include>
-    <!-- navbar -->
-    <jsp:include page="/WEB-INF/views/inc/navbar.jsp"></jsp:include>
-
-
-    <style>
-    .css-16n69u8 {
-    width: 100%;
-    border-radius: 16px;
-    --tw-shadow: 0px 2px 16px rgba(0, 0, 0, 0.08);
-    --tw-shadow-colored: 0px 2px 16px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    z-index: 11;
-    padding: 8px 20px 20px;
-}
-.css-k02ev0 {
-    width: 100%;
-    border-bottom-width: 1px;
-    --tw-border-opacity: 1;
-    border-color: rgb(245 245 245 / var(--tw-border-opacity));
-}
-.css-cfjpcv {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    position: relative;
-    z-index: 2;
-    padding-left: 0px;
-    padding-right: 0px;
-    overflow: hidden;
-} 
-.css-v25nqu {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    height: 52px;
-}
-.css-18ccwgl {
-    width: 100%;
-}
-.css-ple6f2 {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-}
-.css-1xz1yyj {
-    max-width: 420px;
-    width: 100%;
-} 
-.css-19sk4h4 {
-    position: relative;
-}
-.css-1qs59fb {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-.css-8axmcj {
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    -webkit-box-align: center;
-    align-items: center;
-    position: relative;
-    height: 48px;
-    --tw-bg-opacity: 1;
-    background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-    padding: 4px 14px;
-}
-.css-lop7o2 {
-    height: 20px;
-    width: 20px;
-    margin-right: 8px;
-}
-.css-1hm6dv8 {
-    fill: rgb(153, 153, 153);
-}
-.css-59ixa7 {
-    height: 20px;
-    width: 100%;
-    position: relative;
-}
-.css-13l7akb {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    font-size: 1rem;
-    line-height: normal;
-    letter-spacing: 0px;
-    font-weight: 600;
-    --tw-text-opacity: 1;
-    color: rgb(51 51 51 / var(--tw-text-opacity));
-    caret-color: rgb(18, 115, 228);
-    flex: 1 1 0%;
-}
-.css-18ulrpo {
-    max-width: 298px;
-    width: 100%;
-}
-.h-full {
-    height: 100%;
-}
-.css-nbszbk {
-    height: 48px;
-    display: flex;
-    flex: 1 1 0%;
-    -webkit-box-align: center;
-    align-items: center;
-    border-radius: 8px;
-    gap: 8px;
-    cursor: pointer;
-    --tw-bg-opacity: 1;
-    background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-    padding: 4px 4px 4px 16px;
-}
-.css-zppxx6 {
-    fill: rgb(153, 153, 153);
-}
-.css-k8a7g9 {
-    font-size: 1rem;
-    line-height: normal;
-    letter-spacing: 0px;
-    font-weight: 600;
-    --tw-text-opacity: 1;
-    color: rgb(51 51 51 / var(--tw-text-opacity));
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.css-14l0i74 {
-    min-width: 120px;
-}
-.css-1ke8c0e {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    cursor: pointer;
-    height: 48px;
-    border-radius: 10px;
-    border-width: 2px;
-    font-size: 1rem;
-    line-height: normal;
-    letter-spacing: 0px;
-    font-weight: 600;
-    width: 100%;
-    --tw-bg-opacity: 1;
-    background-color: rgb(18 115 228 / var(--tw-bg-opacity));
-    color: rgb(255, 255, 255);
-    border-style: none;
-    padding: 10px 18px;
-}
-.css-1tt5e92 {
-    height: 100%;
-    width: 100%;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: end;
-    justify-content: flex-end;
-    z-index: 11;
-    position: relative;
-}
-.css-1xm5k3z {
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-    flex-shrink: 0;
-    -webkit-box-flex: 0;
-    flex-grow: 0;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    cursor: pointer;
-    outline: transparent solid 2px;
-    outline-offset: 2px;
-}
-/*날씨로 검색*/
-.css-k3ujds {
-    font-size: 1rem;
-    line-height: normal;
-    letter-spacing: 0px;
-    font-weight: 700;
-    --tw-text-opacity: 1;
-    color: rgb(18 115 228 / var(--tw-text-opacity));
-}
-/*위치로 검색*/
-.css-1ul4dyk {
-    font-size: 1rem;
-    line-height: normal;
-    letter-spacing: 0px;
-    font-weight: 500;
-    --tw-text-opacity: 1;
-    color: rgb(112 112 112 / var(--tw-text-opacity));
-}
-.css-fypmlo {
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 200ms;
-    z-index: 1;
-    position: absolute;
-    bottom: 0px;
-    height: 2px;
-    --tw-bg-opacity: 1;
-    background-color: rgb(18 115 228 / var(--tw-bg-opacity));
-}
-    </style>
+    <!-- navbar --> 
+    <jsp:include page="/WEB-INF/views/inc/navbar.jsp">
+      <jsp:param value="1" name="nav_num"/>    
+    </jsp:include> 
+    
+    <script type="text/javascript">
+		$(function() {
+		  $('ul.tab li').click(function() {
+		    $('ul.tab li').removeClass('on');
+		    $(this).addClass('on');
+		  })
+		});
+		</script>
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="${pageContext.request.contextPath}/resources/images/hero.jpg">
     <div class="css-1tt5e92">
 			<div class="css-16n69u8">
 			  <div class="css-k02ev0">
 			    <div class="gc-line-large-tab css-v25nqu">
-			      <ul role="tablist" aria-label="" class="gc-line-large-tab-ul css-cfjpcv">
-			        <li tabindex="0" role="tab" aria-selected="true" aria-controls="DOMESTIC_ACCOMMODATION" class="css-1xm5k3z">
-			          <span class="css-k3ujds">날씨로 검색</span>
+			      <ul role="tablist" aria-label="" class="tab">
+			        <li tabindex="0" role="tab" aria-selected="true" aria-controls="DOMESTIC_ACCOMMODATION" class="tab1 on">
+			          <span>날씨로 검색</span>
 			        </li>
-			        <li tabindex="0" role="tab" aria-selected="false" aria-controls="OVERSEAS_ACCOMMODATION" class="css-1xm5k3z">
-			          <span class="css-1ul4dyk">위치로 검색</span>
+			        <li tabindex="0" role="tab" aria-selected="false" aria-controls="OVERSEAS_ACCOMMODATION" class="tab2">
+			          <span>위치로 검색</span>
 			        </li>
-			        <div class="css-fypmlo" style="width: 117.63px;left: 0px;"></div>
 			      </ul>
 			    </div>
 			  </div>
@@ -300,7 +92,7 @@
 			      </div>
 			      
 			      <div class="css-14l0i74">
-			        <button class="gc-box-button css-1ke8c0e" type="button">
+			        <button class="button-search" type="button">
 			          <span>검색</span>
 			        </button>
 			      </div>
@@ -308,12 +100,6 @@
 			    </form>
 			  </div>
 			</div>
-<!--         <form class="d-flex tm-search-form"> -->
-<!--             <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search"> -->
-<!--             <button class="btn btn-outline-success tm-search-btn" type="submit"> -->
-<!--                 <i class="fas fa-search"></i> -->
-<!--             </button> -->
-<!--         </form> -->
 		</div>
     </div>
 

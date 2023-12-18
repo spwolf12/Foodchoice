@@ -20,7 +20,9 @@
     <!-- Page Loader -->
     <jsp:include page="/WEB-INF/views/inc/page_loder.jsp"></jsp:include>
     <!-- navbar -->
-    <jsp:include page="/WEB-INF/views/inc/navbar.jsp"></jsp:include>
+    <jsp:include page="/WEB-INF/views/inc/navbar.jsp">
+      <jsp:param value="3" name="nav_num"/>    
+    </jsp:include> 
 
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="${pageContext.request.contextPath}/resources/images/hero.jpg">
         <form class="d-flex tm-search-form">
