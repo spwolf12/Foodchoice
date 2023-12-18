@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/templatemo-style.css">
     <script src="${pageContext.request.contextPath}/resources/js/jquery-3.4.1.min.js"></script>
     <script src="${pageContext.request.contextPath}/resources/js/common.js"></script>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/common.css">
     <jsp:include page="inc/header_meta.jsp"></jsp:include>
 </head>
 <body>
@@ -23,15 +24,8 @@
     <jsp:include page="/WEB-INF/views/inc/navbar.jsp">
       <jsp:param value="3" name="nav_num"/>    
     </jsp:include> 
-
-    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="${pageContext.request.contextPath}/resources/images/hero.jpg">
-        <form class="d-flex tm-search-form">
-            <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success tm-search-btn" type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
-    </div>
+    <jsp:include page="inc/search.jsp"></jsp:include>
+    
     <div class="container-fluid tm-container-content tm-mt-60" style="display:flex;">
      
       <section style="max-width:50%">
@@ -67,8 +61,8 @@
           <!-- Map -->
           <div class="mapouter mb-4">
               <div class="gmap-canvas">
-                <iframe width="100%" height="520" id="gmap-canvas"
-                    src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                <iframe width="100%" height="100%" id="gmap-canvas"
+                    src="map"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
               </div>
           </div>  

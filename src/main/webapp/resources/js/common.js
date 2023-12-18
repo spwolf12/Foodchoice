@@ -4,3 +4,10 @@
 $(window).on("load", function() {
     $('body').addClass('loaded');
 });
+/* nav onclick */
+$(function() {
+  $('ul.tab li').click(function() {
+    $('ul.tab li').removeClass('on');
+    $(this).addClass('on');
+  })
+});

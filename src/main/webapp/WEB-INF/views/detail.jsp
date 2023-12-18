@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/templatemo-style.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/common.css">
   <script src="${pageContext.request.contextPath}/resources/js/jquery-3.4.1.min.js"></script>
   <script src="${pageContext.request.contextPath}/resources/js/common.js"></script>
   <jsp:include page="inc/header_meta.jsp"></jsp:include>
@@ -21,16 +22,10 @@
   <!-- Page Loader -->
   <jsp:include page="/WEB-INF/views/inc/page_loder.jsp"></jsp:include>
   <!-- navbar -->
-  <jsp:include page="/WEB-INF/views/inc/navbar.jsp"></jsp:include>
-
-  <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="${pageContext.request.contextPath}/resources/images/hero.jpg">
-    <form class="d-flex tm-search-form">
-      <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success tm-search-btn" type="submit">
-        <i class="fas fa-search"></i>
-      </button>
-    </form>
-  </div>
+  <jsp:include page="/WEB-INF/views/inc/navbar.jsp">
+    <jsp:param value="3" name="nav_num"/>    
+  </jsp:include> 
+  <jsp:include page="inc/search.jsp"></jsp:include>
   
   <div class="container-fluid tm-container-content tm-mt-60">
     <div class="row mb-4">
@@ -63,22 +58,20 @@
           </div>
           <div>
             <h3 class="tm-text-gray-dark mb-3">Tags</h3>
-            <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Cloud</a>
-            <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Bluesky</a>
-            <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Nature</a>
-            <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Background</a>
-            <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Timelapse</a>
-            <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Night</a>
-            <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Real Estate</a>
+            
+            <%String[] tags ={"Cloud", "Bluesky", "Nature","Background","Timelapse","Night", "Real Eastate"};%>
+            <%for(String tag : tags){%>
+            <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block"><%=tag %></a>
+            <%} %>
+            
           </div>
         </div>
       </div>
     </div>
     <div class="row mb-4">
-      <h2 class="col-12 tm-text-primary">
-        Related Photos
-      </h2>
+      <h2 class="col-12 tm-text-primary"> Related Food </h2>
     </div>
+    
     <div class="row mb-3 tm-gallery">
       <%int rotateNum = 8;
         String itemName = "Hangers";
