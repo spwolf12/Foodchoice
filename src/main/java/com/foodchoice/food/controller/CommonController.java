@@ -59,10 +59,14 @@ public class CommonController {
 		
 		return "iframePage";
 	}
-	
 	@GetMapping(value = "Weather")
 	public String weather(Model model, HttpSession session) {
 		
 		return "Weather";
+	}
+	@GetMapping(value = "myLocation")
+	public String myLocation(Model model, HttpSession session) {
+		
+		return "myLocation";
 	}
 }
