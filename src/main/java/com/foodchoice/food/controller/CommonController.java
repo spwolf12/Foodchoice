@@ -69,4 +69,9 @@ public class CommonController {
 		
 		return "myLocation";
 	}
+	@GetMapping(value = "testSearch")
+	public String testSearch(Model model, HttpSession session) {
+		
+		return "testSearch";
+	}
 }
